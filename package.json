@@ -9,7 +9,9 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "test:coverage": "jest --collectCoverage",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json"
   },
   "dependencies": {
     "next": "12.0.7",
@@ -20,6 +22,7 @@
     "@babel/core": "^7.16.5",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-jest": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
     "@storybook/react": "^6.4.9",
     "@storybook/testing-react": "^1.2.2",
@@ -38,5 +41,11 @@
     "jest": "^27.4.5",
     "storybook-css-modules-preset": "^1.1.1",
     "typescript": "4.5.4"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ]
   }
 }
