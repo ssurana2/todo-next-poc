@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sample Todo Application
+
+The sample todo application is developed on next.js.
+
+## Goal
+
+The goal of this sample is divided into following parts
+
+- [ ] Develop a project based todo application
+- [x] Add storybook
+- [ ] Host storybook on github pages
+- [ ] Add continuous deployment on main branch using AWS amplify
+- [ ] Add flow/steps to deploy staging and branch specific code using AWS amplify
+
+## Optional Goals
+
+- [ ] Trigger slack messages on build failure / success
+- [ ] Trigger slack message when the build is deployed to production
+- [ ] Enable mechanism to rollback via slack
+
+## Tech stack:
+
+```
+"next": "12.0.7",
+"react": "17.0.2",
+"typescript": "4.5.4",
+"@storybook/react": "^6.4.9",
+```
 
 ## Getting Started
 
@@ -32,4 +59,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# todo-next-poc
