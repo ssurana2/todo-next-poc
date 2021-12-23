@@ -27,6 +27,10 @@ The goal of this sample is divided into following parts
 "@storybook/react": "^6.4.9",
 ```
 
+## Things to not
+
+* If working with CSS modules, then for storybook to load the css properly use [Storybook CSS Modules Preset](https://github.com/Negan1911/storybook-css-modules-preset)
+
 ## Getting Started
 
 First, run the development server:

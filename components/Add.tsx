@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import styles from "../styles/Add.module.css";
+import styles from "@/styles/Add.module.css";
 
 interface Props {
   buttonTitle: string;

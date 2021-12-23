@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Add from "./Add";
-import styles from '../styles/Projects.module.css';
+import Add from "@/components/Add";
+import styles from '@/styles/Projects.module.css';
 
 const Projects = () => {
   const [projects, setProjects] = useState<string[]>([]);
