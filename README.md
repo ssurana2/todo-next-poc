@@ -8,7 +8,7 @@ The goal of this sample is divided into following parts
 
 - [ ] Develop a project based todo application
 - [x] Add storybook
-- [ ] Host storybook on github pages
+- [x] Host storybook on github pages (hosted at https://ssurana2.github.io/todo-next-poc/)
 - [ ] Add continuous deployment on main branch using AWS amplify
 - [ ] Add flow/steps to deploy staging and branch specific code using AWS amplify
 
