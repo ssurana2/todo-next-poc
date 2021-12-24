@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import styles from "@/styles/Add.module.css";
+import CirclePlus from "./CirclePlus";
 
 interface Props {
   buttonTitle: string;
@@ -20,8 +21,8 @@ const Add = ({ placeholder, buttonTitle, onAdd }: Props) => {
   return (
     <form className={styles.form} onSubmit={onSubmit}>
       <input className={styles.input} ref={ref} placeholder={placeholder} />
-      <button className={styles.submit} type='submit'>
-        {buttonTitle}
+      <button className={styles.submit} type='submit' title={buttonTitle}>
+        <CirclePlus />
       </button>
     </form>
   );

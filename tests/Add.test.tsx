@@ -14,7 +14,7 @@ test("should trigger onAdd event on clicking the add button", () => {
   userEvent.type(inputElement, "Hello");
   expect(inputElement).toHaveValue("Hello");
 
-  const buttonElement = screen.getByText("Add");
+  const buttonElement = screen.getByTitle("Add");
   expect(buttonElement).toBeDefined();
   userEvent.click(buttonElement);
 

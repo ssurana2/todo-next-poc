@@ -11,7 +11,8 @@
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "test:coverage": "jest --collectCoverage",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json"
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "next": "12.0.7",
@@ -25,6 +26,7 @@
     "@storybook/addon-jest": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
     "@storybook/react": "^6.4.9",
+    "@storybook/storybook-deployer": "^2.8.10",
     "@storybook/testing-react": "^1.2.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
