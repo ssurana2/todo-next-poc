@@ -11,12 +11,15 @@ The goal of this sample is divided into following parts
 - [x] Host storybook on github pages (hosted at https://ssurana2.github.io/todo-next-poc/)
 - [ ] Add continuous deployment on main branch using AWS amplify
 - [ ] Add flow/steps to deploy staging and branch specific code using AWS amplify
+- [ ] Compare it with firebase hosting
+- [ ] Ease of integrating with firbase and AWS
 
 ## Optional Goals
 
 - [ ] Trigger slack messages on build failure / success
 - [ ] Trigger slack message when the build is deployed to production
 - [ ] Enable mechanism to rollback via slack
+- [ ] Trigger message to reviewers on PR creation
 
 ## Tech stack:
 
