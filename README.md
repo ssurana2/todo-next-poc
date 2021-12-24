@@ -13,6 +13,8 @@ The goal of this sample is divided into following parts
 - [ ] Add flow/steps to deploy staging and branch specific code using AWS amplify
 - [ ] Compare it with firebase hosting
 - [ ] Ease of integrating with firbase and AWS
+- [ ] Add test badges on repo readme
+- [ ] Test coverage report on the PR (coveralls, https://www.covbot.dev)
 
 ## Optional Goals
 
