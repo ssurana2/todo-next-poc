@@ -1,4 +1,29 @@
 .container {
-    width: 100%;
-    margin-top: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.listItem {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.listItem:first-child {
+  margin-top: 10px;
+}
+
+.listItem:hover {
+  background-color: rgba(204, 204, 204, 0.5);
 }
