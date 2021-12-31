@@ -10,10 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
         actions: write
-        checks: write
         contents: write
         deployments: write
-        packages: write
         pages: write
         pull-requests: write
     steps:
