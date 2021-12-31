@@ -9,8 +9,8 @@ jobs:
     name: Deploy storybook
     runs-on: ubuntu-latest
     permissions:
-        actions: write
-        contents: write
+        actions: read
+        contents: read
         deployments: write
         pages: write
     steps:
