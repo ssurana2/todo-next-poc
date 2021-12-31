@@ -8,11 +8,7 @@ jobs:
   deploy_storybook:
     name: Deploy storybook
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      pull-requests: write
-      contents: read
-      deployments: write
+    permissions: write-all
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -31,6 +27,5 @@ jobs:
     - name: build and deploy storybook
       uses: JamesIves/github-pages-deploy-action@4.1.7
       with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: storybook-static
