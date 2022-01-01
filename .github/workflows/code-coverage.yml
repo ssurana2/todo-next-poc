@@ -9,6 +9,12 @@ jobs:
     permissions:
       contents: write
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+    - name: install node modules
+      run: npm install
     - name: Test coverage
       uses: mattallty/jest-github-action@v1
       env:
