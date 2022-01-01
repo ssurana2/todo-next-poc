@@ -6,13 +6,7 @@ jobs:
   coverage_reporting:
     name: Coverage_reporting
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      packages: write
-      checks: write
-      actions: write
-      security-events: write
-      id-token: write
+    permissions: write-all
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
