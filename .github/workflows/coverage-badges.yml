@@ -15,7 +15,7 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
     - name: install node modules
-      run: npm install
+      run: npm ci
     - name: Generate coverage summary
       run: npm run test:json-summary
     - name: Execute shell
@@ -29,7 +29,7 @@ jobs:
             fi
         }
         OIFS="$IFS"
-        set $(node scripts/coverageReporters.js)
+        set $(node scripts/coverageReporter.js)
         declare $1
         declare $2
         declare $3

@@ -17,7 +17,7 @@ jobs:
         ref: ${{ github.head_ref }}
 
     - name: install node modules
-      run: npm install
+      run: npm ci
 
     - name: run jest coverage for storybook integration
       run: npm run test:generate-output

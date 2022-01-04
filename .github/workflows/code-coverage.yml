@@ -13,7 +13,7 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
     - name: install node modules
-      run: npm install
+      run: npm ci
     - name: Test coverage
       uses: mattallty/jest-github-action@v1
       env:
