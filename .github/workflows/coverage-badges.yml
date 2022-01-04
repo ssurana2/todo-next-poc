@@ -25,7 +25,7 @@ jobs:
         set $(node scripts/coverageReporter.js)
         echo "::group::CoverageBadgeReporter"
         for i; do
-          echo "$1"
+          echo "$i"
           echo "::set-output name=${i}"
         done
         echo "::endgroup::"
@@ -34,7 +34,7 @@ jobs:
     - name: Create lines Badge
       uses: schneegans/dynamic-badges-action@v1.1.0
       with:
-        auth: ${{ secrets.GITHUB_TOKEN }}
+        auth: ${{ secrets.GIST_SECRET }}
         gistID: ${{ secrets.GIST_ID }}
         filename: lines.json
         label: Lines
