@@ -6,11 +6,11 @@ on:
 
 jobs:
   coverage_reporting:
-    name: Coverage badge generator
+    name: Coverage repporting
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-     - name: Checkout repository
+    - name: Checkout repository
       uses: actions/checkout@v2
       with:
         ref: ${{ github.head_ref }}
