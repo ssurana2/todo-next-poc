@@ -2,6 +2,11 @@
 
 The sample todo application is developed on next.js.
 
+![Lines Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ssurana2/8e6024952dacb2bbcc3d828a53cb39b6/raw/lines.json)
+![Branch Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ssurana2/8e6024952dacb2bbcc3d828a53cb39b6/raw/branches.json)
+![Statments Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ssurana2/8e6024952dacb2bbcc3d828a53cb39b6/raw/statements.json)
+![Functions Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/ssurana2/8e6024952dacb2bbcc3d828a53cb39b6/raw/functions.json)
+
 ## Goal
 
 The goal of this sample is divided into following parts

@@ -11,8 +11,8 @@
     "test:once": "jest",
     "test": "jest --watch",
     "test:ci": "jest --ci",
-    "test:coverage": "jest --collectCoverage",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
+    "test:json-summary": "jest --coverage --coverageReporters=\"json-summary\"",
     "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
