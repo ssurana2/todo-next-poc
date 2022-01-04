@@ -20,35 +20,13 @@ jobs:
       run: npm run test:json-summary
     - name: Execute shell
       run: |
-        find_color()
-        {
-            if [ "$1" -lt 80 ]; then
-                echo 'red'
-            else
-                echo 'green'
-            fi
-        }
-        OIFS="$IFS"
         set $(node scripts/coverageReporter.js)
-        declare $1
-        declare $2
-        declare $3
-        declare $4
-        IFS="$OIFS"
-        echo "::group::CoverageReport"
-        echo "$1"
-        echo "$2"
-        echo "$3"
-        echo "$4"
+        echo "::group::CoverageBadgeReporter"
+        for i; do
+          echo "$1"
+          echo "::set-output name=${i}"
+        done
         echo "::endgroup::"
-        echo "::set-output name=LINES::$(LINES)"
-        echo "::set-output name=LINES_COLOR::$(find_color LINES)"
-        echo "::set-output name=STATEMENTS::$(STATEMENTS)"
-        echo "::set-output name=STATEMENTS_COLOR::$(find_color STATEMENTS)"
-        echo "::set-output name=FUNCTIONS::$(FUNCTIONS)"
-        echo "::set-output name=FUNCTIONS_COLOR::$(find_color FUNCTIONS)"
-        echo "::set-output name=BRANCHES::$(BRANCHES)"
-        echo "::set-output name=BRANCHES_COLOR::$(find_color BRANCHES)"
       id: badge-script
     - name: Create lines Badge
       uses: schneegans/dynamic-badges-action@v1.1.0
