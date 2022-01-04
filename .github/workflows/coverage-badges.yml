@@ -20,6 +20,8 @@ jobs:
       run: npm run test:json-summary
     - name: Execute shell
       run: |
+        OIFS="$IFS"
+        IFS="|"
         set $(node scripts/coverageReporter.js)
         echo "::group::CoverageBadgeReporter"
         for i; do
@@ -27,6 +29,7 @@ jobs:
           echo "::set-output name=${i}"
         done
         echo "::endgroup::"
+        IFS="$OIFS"
       id: badge-script
     - name: Create lines Badge
       uses: schneegans/dynamic-badges-action@v1.1.0
