@@ -37,7 +37,7 @@ jobs:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: ${{ secrets.GIST_ID }}
         filename: lines.json
-        label: Lines
+        label: LINES
         message: ${{ steps.badge-script.outputs.LINES }}
         color: ${{ steps.badge-script.outputs.LINES_COLOR }}
     - name: Create functions Badge
